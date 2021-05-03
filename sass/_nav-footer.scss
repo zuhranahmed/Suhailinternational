@@ -1,0 +1,382 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem;
+  border-bottom: 1px solid rgba($color-white, 0.6);
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &--link {
+      transition: all 0.3s ease;
+      a {
+        color: $color-grey;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+      &:not(:last-of-type) {
+        margin-right: 4rem;
+      }
+
+      &:hover {
+        border-bottom: 1px solid $color-white;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      background-color: $color-main;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease;
+      transform: translateX(-100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &--link {
+        &:not(:last-of-type) {
+          margin-right: 0rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger-icon {
+    font-size: 2.4rem;
+    color: $color-white;
+    margin-left: 1.5rem;
+    display: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+  .close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 2.4rem;
+    color: $color-white;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 2.8rem 0;
+    &__links {
+      display: flex;
+      align-items: center;
+
+      &--link {
+        a {
+          font-weight: 600;
+          font-size: 1.8rem;
+        }
+        &:not(:last-of-type) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.2rem 0;
+  }
+}
+
+// navbar-secondary
+.navbar-secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem;
+  border-bottom: 1px solid rgba($color-grey, 0.6);
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &--link {
+      transition: all 0.3s ease;
+      a {
+        color: $color-text-main;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $color-main;
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: 4rem;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      background-color: $color-main;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease;
+      transform: translateX(-100%);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &--link {
+        &:not(:last-of-type) {
+          margin-right: 0rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger-icon {
+    font-size: 2.4rem;
+    color: $color-text-main;
+    margin-left: 1.5rem;
+    display: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+  .close-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 2.4rem;
+    color: $color-white;
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    padding: 2.8rem 0;
+    &__links {
+      display: flex;
+      align-items: center;
+
+      &--link {
+        a {
+          font-weight: 600;
+          font-size: 1.8rem;
+        }
+        &:not(:last-of-type) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1.2rem 0;
+  }
+}
+
+// Footer
+
+.footer-main {
+  background-color: #fafbfd;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 8rem 0;
+    @media screen and (max-width: 1200px) {
+      padding: 8rem 1rem;
+    }
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    h4 {
+      font-family: $font-heading;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $color-grey;
+    }
+
+    p {
+      color: $color-text-secondary;
+    }
+
+    .logo-copyright-container {
+      .logo-footer {
+        margin-bottom: 2rem;
+      }
+      .copyright-developer {
+        font-size: 1.6rem;
+        line-height: 20px;
+        margin-bottom: 2rem;
+
+        a {
+          color: $color-main;
+          font-weight: 500;
+          border-bottom: 1px dotted $color-main;
+
+          i {
+            margin-left: 2px;
+          }
+        }
+      }
+
+      .social-footer {
+        i {
+          color: $color-text-main;
+          transition: all 0.3s ease;
+          margin-right: 1rem;
+          font-size: 2rem;
+
+          &:hover {
+            color: $color-main;
+            transform: translateY(-2px);
+          }
+        }
+      }
+    }
+
+    .pages-container {
+      a {
+        display: block;
+        color: $color-text-main;
+        transition: all 0.3s ease;
+
+        &:not(:last-of-type) {
+          margin-bottom: 1rem;
+        }
+        &:hover {
+          color: $color-main;
+        }
+      }
+    }
+
+    .products-list-container {
+      .products-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: flex-start;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          a {
+            color: $color-text-main;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $color-main;
+            }
+            &:not(:last-of-type) {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .mailing-list {
+      p {
+        margin-bottom: 2rem;
+      }
+      form {
+        div {
+          border: 1px solid $color-main;
+          display: flex;
+          padding: 8px 1.4rem;
+          border-radius: 5rem;
+          width: 80%;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            padding: 6px 1rem;
+            border-radius: 4rem;
+          }
+          input {
+            border: 0;
+            outline: none;
+            font-size: 1.8rem;
+            color: $color-text-main;
+            background-color: #fafbfd;
+            width: 100%;
+            @media screen and (max-width: 768px) {
+              font-size: 1.6rem;
+            }
+
+            &::placeholder {
+              color: $color-text-third;
+              font-size: 1.6rem;
+              @media screen and (max-width: 768px) {
+                font-size: 1.4rem;
+              }
+            }
+          }
+
+          button {
+            color: $color-text-main;
+            background-color: $color-main;
+            border: 0;
+            font-size: 1.6rem;
+            font-weight: 500;
+            padding: 1rem 2.4rem;
+            border-radius: 3rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+              font-size: 1.4rem;
+              padding: 8px 2rem;
+            }
+
+            &:hover {
+              background-color: $color-secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-image {
+  img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.show-nav {
+  transform: translateX(0);
+}
+.hide-nav {
+  transform: translateX(100%);
+}

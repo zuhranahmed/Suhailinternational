@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+@import "theme.scss";
+@import "about.scss";
+@import "contact.scss";
+@import "home.scss";
+@import "nav-footer.scss";
+@import "products.scss";
+@import "product-categories.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-general;
+  font-weight: 400;
+  background-color: $color-white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
