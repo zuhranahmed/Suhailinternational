@@ -1,9 +1,320 @@
-.all-products {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+// .all-products {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
 
-  .line.pink {
+//   .line.pink {
+//     margin-bottom: 4rem;
+//   }
+//   .explore-products {
+//     padding: 8rem 0;
+//     display: grid;
+//     align-items: center;
+//     gap: 2rem;
+//     grid-template-columns: repeat(2, 1fr);
+//     @media screen and (max-width: 1000px) {
+//       padding: 7rem 1rem;
+//     }
+//     @media screen and (max-width: 768px) {
+//       padding: 6rem 1rem;
+//     }
+//     @media screen and (max-width: 475px) {
+//       padding: 5rem 1rem;
+//       grid-template-columns: 1fr;
+//     }
+
+//     h1 {
+//       color: $color-text-main;
+//     }
+
+//     .product-categories-container {
+//       display: grid;
+//       grid-template-columns: repeat(4, 1fr);
+//       gap: 1.5rem;
+//       text-align: center;
+//       border-left: 1px solid $color-grey;
+//       padding-left: 2rem;
+//       @media screen and (max-width: 1000px) {
+//         grid-template-columns: repeat(3, 1fr);
+//       }
+//       @media screen and (max-width: 768px) {
+//         grid-template-columns: repeat(2, 1fr);
+//       }
+//       @media screen and (max-width: 475px) {
+//         border-left: 0px;
+//         padding-left: 0rem;
+//         border-top: 1px solid $color-grey;
+//         padding-top: 2rem;
+//       }
+//       a {
+//         color: $color-text-secondary;
+//         font-size: 1.4rem;
+//         padding: 5px 8px;
+//         border-radius: 20px;
+//         background-color: $color-grey-light;
+//         transition: all 0.2s ease;
+//         font-weight: 500;
+//         &:hover {
+//           background-color: $color-main;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .edible-salt-container,
+// .salt-plates-container,
+// .salt-lamps-container,
+// .candle-holders-container,
+// .bath-salt-container,
+// .aroma-therapy-container,
+// .salt-tiles-container,
+// .lick-salt-container {
+//   @media screen and (max-width: 1000px) {
+//     padding: 0 1rem;
+//   }
+//   &__details {
+//     padding-left: 2rem;
+//     border-left: 5px solid $color-main;
+//     margin-bottom: 2rem;
+
+//     background-color: $color-grey-light;
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     @media screen and (max-width: 475px) {
+//       grid-template-columns: 1fr;
+//     }
+
+//     &--content {
+//       padding: 8rem 0;
+//       @media screen and (max-width: 768px) {
+//         padding: 6rem 0;
+//       }
+//       @media screen and (max-width: 475px) {
+//         padding: 4rem 0;
+//       }
+//       p {
+//         color: $color-text-secondary;
+//         font-size: 1.8rem;
+//         margin-top: 1rem;
+//         @media screen and (max-width: 768px) {
+//           font-size: 1.6rem;
+//         }
+//       }
+//     }
+//   }
+
+//   .grid-container {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     gap: 2rem;
+//     @media screen and (max-width: 1000px) {
+//       grid-template-columns: repeat(2, 1fr);
+//       gap: 1rem;
+//       & div:nth-child(3) {
+//         display: none;
+//       }
+//       & div:nth-child(4) {
+//         display: none;
+//       }
+//     }
+//     @media screen and (max-width: 475px) {
+//       grid-template-columns: 1fr;
+//       & div:nth-child(2) {
+//         display: none;
+//       }
+//     }
+//   }
+//   &__products {
+//     &--product {
+//       border: 1px solid $color-grey;
+//       img {
+//         width: 100%;
+//         display: block;
+//         height: 325px;
+//         width: 100%;
+//         @media screen and (max-width: 768px) {
+//           height: 300px;
+//         }
+//       }
+//       h5 {
+//         font-size: 2.5rem;
+//         color: $color-text-main;
+//         text-align: center;
+//         padding: 1rem 0;
+//         @media screen and (max-width: 768px) {
+//           font-size: 2rem;
+//         }
+//         @media screen and (max-width: 475px) {
+//           font-size: 1.8rem;
+//         }
+//       }
+//     }
+//   }
+//   .view-all {
+//     width: 100%;
+//     text-align: center;
+//     margin: 4rem 0 8rem 0;
+//     @media screen and (max-width: 768px) {
+//       margin: 3rem 0 6rem 0;
+//     }
+//     @media screen and (max-width: 475px) {
+//       margin: 2rem 0 4rem 0;
+//     }
+//   }
+// }
+
+// .candle-holders-container,
+// .salt-plates-container,
+// .salt-tiles-container,
+// .aroma-therapy-container {
+//   &__details {
+//     padding-right: 2rem;
+//     padding-left: 0rem;
+//     border-right: 5px solid $color-main;
+//     border-left: 0px solid $color-main;
+//     &--content {
+//       padding-left: 2rem;
+//     }
+//   }
+// }
+
+// .edible-salt-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/edible-salt-bg.jpg");
+//     }
+//   }
+// }
+// .salt-plates-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/salt-plates-bg.JPG");
+//     }
+//   }
+// }
+// .salt-lamps-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/salt-lamps-bg.jpg");
+//     }
+//   }
+// }
+// .candle-holders-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/candle-holders-bg.jpg");
+//     }
+//   }
+// }
+// .bath-salt-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/bath-salt-bg.png");
+//     }
+//   }
+// }
+// .salt-tiles-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/Salt-tiles-bg.jpg");
+//     }
+//   }
+// }
+// .lick-salt-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/lick-salt-bg.jpg");
+//     }
+//   }
+// }
+// .aroma-therapy-container {
+//   &__details {
+//     &--image {
+//       background: url("../assets/products/aroma-therapy-bg.jpg");
+//     }
+//   }
+// }
+// @media screen and (max-width: 475px) {
+//   .edible-salt-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+//   .salt-plates-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+//   .salt-lamps-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+//   .candle-holders-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+//   .bath-salt-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+//   .salt-tiles-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+//   .lick-salt-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+//   .aroma-therapy-container {
+//     &__details {
+//       &--image {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+// .edible-salt-container,
+// .salt-lamps-container,
+// .salt-plates-container,
+// .lick-salt-container,
+// .candle-holders-container,
+// .bath-salt-container,
+// .salt-tiles-container,
+// .aroma-therapy-container {
+//   &__details {
+//     &--image {
+//       background-position: center;
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//     }
+//   }
+// }
+
+.all-products-container {
+  margin-bottom: 8rem;
+  @media screen and (max-width: 1200px) {
+    padding: 0 1rem;
     margin-bottom: 4rem;
   }
   .explore-products {
@@ -67,246 +378,251 @@
 .salt-lamps-container,
 .candle-holders-container,
 .bath-salt-container,
-.aroma-therapy-container,
 .salt-tiles-container,
-.lick-salt-container {
-  @media screen and (max-width: 1000px) {
-    padding: 0 1rem;
-  }
-  &__details {
-    padding-left: 2rem;
-    border-left: 5px solid $color-main;
-    margin-bottom: 2rem;
+.lick-salt-container,
+.aroma-therapy-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 400px;
 
-    background-color: $color-grey-light;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    @media screen and (max-width: 475px) {
-      grid-template-columns: 1fr;
-    }
+  &__details {
+    display: flex;
+    align-items: center;
 
     &--content {
-      padding: 8rem 0;
-      @media screen and (max-width: 768px) {
-        padding: 6rem 0;
+      padding: 3rem 5rem;
+      background-color: rgba($color-grey-light, 0.95);
+      text-align: center;
+
+      @media screen and (max-width: 1200px) {
+        padding: 2rem 3.5rem;
       }
-      @media screen and (max-width: 475px) {
-        padding: 4rem 0;
+      @media screen and (max-width: 1000px) {
+        padding: 1.5rem 2.5rem;
+      }
+      @media screen and (max-width: 768px) {
+        padding: 2.5rem;
+      }
+
+      h2 {
+        display: inline-block;
+        margin-bottom: 2rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 5px solid $color-main;
       }
       p {
-        color: $color-text-secondary;
         font-size: 1.8rem;
-        margin-top: 1rem;
+        line-height: 24px;
+        color: $color-text-secondary;
+        margin-bottom: 2rem;
         @media screen and (max-width: 768px) {
           font-size: 1.6rem;
+          line-height: 20px;
         }
       }
     }
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    @media screen and (max-width: 1000px) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      & div:nth-child(3) {
-        display: none;
-      }
-      & div:nth-child(4) {
-        display: none;
-      }
-    }
-    @media screen and (max-width: 475px) {
-      grid-template-columns: 1fr;
-      & div:nth-child(2) {
-        display: none;
-      }
-    }
-  }
-  &__products {
-    &--product {
-      border: 1px solid $color-grey;
-      img {
-        width: 100%;
-        display: block;
-        height: 325px;
-        width: 100%;
-        @media screen and (max-width: 768px) {
-          height: 300px;
-        }
-      }
-      h5 {
-        font-size: 2.5rem;
-        color: $color-text-main;
-        text-align: center;
-        padding: 1rem 0;
-        @media screen and (max-width: 768px) {
-          font-size: 2rem;
-        }
-        @media screen and (max-width: 475px) {
-          font-size: 1.8rem;
-        }
-      }
-    }
-  }
-  .view-all {
-    width: 100%;
-    text-align: center;
-    margin: 4rem 0 8rem 0;
-    @media screen and (max-width: 768px) {
-      margin: 3rem 0 6rem 0;
-    }
-    @media screen and (max-width: 475px) {
-      margin: 2rem 0 4rem 0;
-    }
-  }
-}
-
-.candle-holders-container,
-.salt-plates-container,
-.salt-tiles-container,
-.aroma-therapy-container {
-  &__details {
-    padding-right: 2rem;
-    padding-left: 0rem;
-    border-right: 5px solid $color-main;
-    border-left: 0px solid $color-main;
-    &--content {
-      padding-left: 2rem;
-    }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
   }
 }
 
 .edible-salt-container {
+  @media screen and (max-width: 768px) {
+  }
+  &__bg {
+    background: url("../assets/products/edible-salt-bg.jpg");
+  }
+
   &__details {
-    &--image {
-      background: url("../assets/products/edible-salt-bg.jpg");
+    &--content {
+      transform: translateX(-150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(-125px);
+      }
+      @media screen and (max-width: 1000px) {
+        transform: translateX(-100px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
+      }
     }
   }
 }
 .salt-plates-container {
+  &__bg {
+    background: url("../assets/products/salt-plates-bg.JPG");
+    @media screen and (max-width: 768px) {
+      grid-row: 2/3;
+    }
+  }
   &__details {
-    &--image {
-      background: url("../assets/products/salt-plates-bg.JPG");
+    &--content {
+      transform: translateX(150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(125px);
+      }
+      @media screen and (max-width: 1000px) {
+        transform: translateX(100px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
+      }
     }
   }
 }
 .salt-lamps-container {
+  &__bg {
+    background: url("../assets/products/salt-lamps-bg.jpg");
+    @media screen and (max-width: 768px) {
+      grid-row: 2/3;
+    }
+  }
+
   &__details {
-    &--image {
-      background: url("../assets/products/salt-lamps-bg.jpg");
+    &--content {
+      transform: translateX(-150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(-125px);
+      }
+      @media screen and (max-width: 1000px) {
+        transform: translateX(-100px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
+      }
     }
   }
 }
 .candle-holders-container {
+  &__bg {
+    background: url("../assets/products/candle-holders-bg.jpg");
+  }
   &__details {
-    &--image {
-      background: url("../assets/products/candle-holders-bg.jpg");
+    &--content {
+      transform: translateX(150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(125px);
+      }
+      @media screen and (max-width: 1000px) {
+        transform: translateX(100px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
+      }
     }
   }
 }
 .bath-salt-container {
+  &__bg {
+    background: url("../assets/products/bath-salt-bg.png");
+    @media screen and (max-width: 768px) {
+      grid-row: 2/3;
+    }
+  }
+
   &__details {
-    &--image {
-      background: url("../assets/products/bath-salt-bg.png");
+    &--content {
+      transform: translateX(-150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(-125px);
+      }
+      @media screen and (max-width: 1000px) {
+        transform: translateX(-100px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
+      }
     }
   }
 }
 .salt-tiles-container {
+  &__bg {
+    background: url("../assets/products/Salt-tiles-bg.jpg");
+  }
   &__details {
-    &--image {
-      background: url("../assets/products/Salt-tiles-bg.jpg");
+    &--content {
+      transform: translateX(150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(125px);
+      }
+      @media screen and (max-width: 1000px) {
+        transform: translateX(100px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
+      }
     }
   }
 }
 .lick-salt-container {
+  &__bg {
+    background: url("../assets/products/lick-salt-bg.jpg");
+    @media screen and (max-width: 768px) {
+      grid-row: 2/3;
+    }
+  }
+
   &__details {
-    &--image {
-      background: url("../assets/products/lick-salt-bg.jpg");
+    &--content {
+      transform: translateX(-150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(-125px);
+      }
+      @media screen and (max-width: 1000px) {
+        transform: translateX(-100px);
+      }
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
+      }
     }
   }
 }
 .aroma-therapy-container {
+  margin-bottom: 0rem;
+  &__bg {
+    background: url("../assets/products/aroma-therapy-bg.jpg");
+  }
   &__details {
-    &--image {
-      background: url("../assets/products/aroma-therapy-bg.jpg");
-    }
-  }
-}
-@media screen and (max-width: 475px) {
-  .edible-salt-container {
-    &__details {
-      &--image {
-        display: none;
+    &--content {
+      transform: translateX(150px);
+      @media screen and (max-width: 1200px) {
+        transform: translateX(125px);
       }
-    }
-  }
-  .salt-plates-container {
-    &__details {
-      &--image {
-        display: none;
+      @media screen and (max-width: 1000px) {
+        transform: translateX(100px);
       }
-    }
-  }
-  .salt-lamps-container {
-    &__details {
-      &--image {
-        display: none;
-      }
-    }
-  }
-  .candle-holders-container {
-    &__details {
-      &--image {
-        display: none;
-      }
-    }
-  }
-  .bath-salt-container {
-    &__details {
-      &--image {
-        display: none;
-      }
-    }
-  }
-  .salt-tiles-container {
-    &__details {
-      &--image {
-        display: none;
-      }
-    }
-  }
-  .lick-salt-container {
-    &__details {
-      &--image {
-        display: none;
-      }
-    }
-  }
-  .aroma-therapy-container {
-    &__details {
-      &--image {
-        display: none;
+      @media screen and (max-width: 768px) {
+        transform: translateX(0px);
       }
     }
   }
 }
 
 .edible-salt-container,
-.salt-lamps-container,
-.salt-plates-container,
-.lick-salt-container,
-.candle-holders-container,
-.bath-salt-container,
 .salt-tiles-container,
+.salt-lamps-container,
+.bath-salt-container,
+.candle-holders-container,
+.lick-salt-container,
+.salt-plates-container,
 .aroma-therapy-container {
-  &__details {
-    &--image {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  &:not(:last-of-type) {
+    margin-bottom: 8rem;
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 6rem;
     }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }

@@ -142,6 +142,9 @@
       justify-content: center;
 
       &--link {
+        a {
+          color: $color-white;
+        }
         &:not(:last-of-type) {
           margin-right: 0rem;
           margin-bottom: 2rem;

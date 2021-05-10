@@ -1,35 +1,3 @@
-// Swiper JS Code Start
-
-var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 2,
-  spaceBetween: 10,
-  loop: true,
-  zoom: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-var swiper2 = new Swiper(".swiper-container-2", {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-});
-
-// Swiper JS Code end
-
 // // Reveal Sections
 
 const createSectionObserver = function () {
@@ -58,19 +26,32 @@ allSections.forEach(function (section) {
 const burgerIcon = document.querySelector(".hamburger-icon");
 const closeIcon = document.querySelector(".close-icon");
 const navItems = document.querySelector(".navbar__links");
+const navItemsSecondary = document.querySelector(".navbar-secondary__links");
 
 const navSlideIn = () => {
   burgerIcon.addEventListener("click", () => {
     navItems.classList.add("show-nav");
-    console.log("click");
   });
 };
 const navSlideOut = () => {
   closeIcon.addEventListener("click", () => {
     navItems.classList.remove("show-nav");
-    console.log("click");
+  });
+};
+
+//
+const navSlideInSec = () => {
+  burgerIcon.addEventListener("click", () => {
+    navItemsSecondary.classList.add("show-nav");
+  });
+};
+const navSlideOutSec = () => {
+  closeIcon.addEventListener("click", () => {
+    navItemsSecondary.classList.remove("show-nav");
   });
 };
 
 navSlideIn();
 navSlideOut();
+navSlideInSec();
+navSlideOutSec();
