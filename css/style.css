@@ -1468,6 +1468,9 @@ h4 {
   height: 360px;
   object-fit: cover;
   object-position: center; }
+  @media screen and (max-width: 768px) {
+    .footer-image img {
+      height: 180px; } }
 
 .show-nav {
   transform: translateX(0); }
