@@ -16,6 +16,32 @@ $color-text-main: #122423;
 $color-text-secondary: #464e4e;
 $color-text-third: #717d7d;
 $color-body: #f8f8f8;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-general;
+  font-weight: 400;
+  background-color: $color-white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
 // Containers
 
 .container-large {

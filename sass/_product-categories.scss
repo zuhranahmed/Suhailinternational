@@ -179,7 +179,7 @@
       margin-bottom: 2rem;
     }
     table {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       border-collapse: collapse;
 
@@ -213,6 +213,9 @@
           }
           td {
             padding: 1rem 2rem;
+            &:not(:last-of-type) {
+              border-right: 1px solid $color-grey;
+            }
           }
         }
       }

@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 .container-large {
   max-width: 1400px;
   margin: 0 auto; }
@@ -1793,6 +1814,75 @@ h4 {
   background-size: cover;
   background-position: center; }
 
+.salt-lamps-categories .natural-lamps,
+.salt-lamps-categories .geometrical-lamps,
+.salt-lamps-categories .iron-basket-lamps,
+.salt-lamps-categories .hand-crafted-lamps {
+  text-align: center;
+  padding: 4rem 0;
+  border-bottom: 1px solid #eaeceb; }
+  @media screen and (max-width: 768px) {
+    .salt-lamps-categories .natural-lamps,
+    .salt-lamps-categories .geometrical-lamps,
+    .salt-lamps-categories .iron-basket-lamps,
+    .salt-lamps-categories .hand-crafted-lamps {
+      padding: 2rem 0; } }
+  .salt-lamps-categories .natural-lamps h2,
+  .salt-lamps-categories .geometrical-lamps h2,
+  .salt-lamps-categories .iron-basket-lamps h2,
+  .salt-lamps-categories .hand-crafted-lamps h2 {
+    color: #122423;
+    margin-bottom: 4rem;
+    border-bottom: 5px solid #f39189;
+    display: inline-block; }
+  .salt-lamps-categories .natural-lamps a,
+  .salt-lamps-categories .geometrical-lamps a,
+  .salt-lamps-categories .iron-basket-lamps a,
+  .salt-lamps-categories .hand-crafted-lamps a {
+    margin-top: 4rem; }
+    @media screen and (max-width: 768px) {
+      .salt-lamps-categories .natural-lamps a,
+      .salt-lamps-categories .geometrical-lamps a,
+      .salt-lamps-categories .iron-basket-lamps a,
+      .salt-lamps-categories .hand-crafted-lamps a {
+        margin-top: 2rem; } }
+  .salt-lamps-categories .natural-lamps .lamps-grid,
+  .salt-lamps-categories .geometrical-lamps .lamps-grid,
+  .salt-lamps-categories .iron-basket-lamps .lamps-grid,
+  .salt-lamps-categories .hand-crafted-lamps .lamps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem; }
+    @media screen and (max-width: 768px) {
+      .salt-lamps-categories .natural-lamps .lamps-grid,
+      .salt-lamps-categories .geometrical-lamps .lamps-grid,
+      .salt-lamps-categories .iron-basket-lamps .lamps-grid,
+      .salt-lamps-categories .hand-crafted-lamps .lamps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem; } }
+    @media screen and (max-width: 475px) {
+      .salt-lamps-categories .natural-lamps .lamps-grid,
+      .salt-lamps-categories .geometrical-lamps .lamps-grid,
+      .salt-lamps-categories .iron-basket-lamps .lamps-grid,
+      .salt-lamps-categories .hand-crafted-lamps .lamps-grid {
+        grid-template-columns: 1fr; } }
+    .salt-lamps-categories .natural-lamps .lamps-grid .lamp-product img,
+    .salt-lamps-categories .geometrical-lamps .lamps-grid .lamp-product img,
+    .salt-lamps-categories .iron-basket-lamps .lamps-grid .lamp-product img,
+    .salt-lamps-categories .hand-crafted-lamps .lamps-grid .lamp-product img {
+      height: 300px;
+      width: 100%;
+      display: block; }
+    @media screen and (max-width: 475px) {
+      .salt-lamps-categories .natural-lamps .lamps-grid .lamp-product:nth-child(3), .salt-lamps-categories .natural-lamps .lamps-grid .lamp-product:nth-child(4),
+      .salt-lamps-categories .geometrical-lamps .lamps-grid .lamp-product:nth-child(3),
+      .salt-lamps-categories .geometrical-lamps .lamps-grid .lamp-product:nth-child(4),
+      .salt-lamps-categories .iron-basket-lamps .lamps-grid .lamp-product:nth-child(3),
+      .salt-lamps-categories .iron-basket-lamps .lamps-grid .lamp-product:nth-child(4),
+      .salt-lamps-categories .hand-crafted-lamps .lamps-grid .lamp-product:nth-child(3),
+      .salt-lamps-categories .hand-crafted-lamps .lamps-grid .lamp-product:nth-child(4) {
+        display: none; } }
+
 .all-products {
   padding: 0 0 8rem 0; }
   .all-products__heading {
@@ -1902,7 +1992,7 @@ h4 {
     .all-products__table h2 {
       margin-bottom: 2rem; }
     .all-products__table table {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       border-collapse: collapse; }
       .all-products__table table thead {
@@ -1929,6 +2019,8 @@ h4 {
           border-bottom: 1px solid #eaeceb; }
         .all-products__table table tbody tr td {
           padding: 1rem 2rem; }
+          .all-products__table table tbody tr td:not(:last-of-type) {
+            border-right: 1px solid #eaeceb; }
   .all-products__details {
     display: flex;
     flex-direction: column;
@@ -1956,24 +2048,3 @@ h4 {
           text-align: center; } }
       .all-products__details p br {
         margin-bottom: 1rem; }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth; }
-
-body {
-  font-size: 1.6rem;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 400;
-  background-color: #ffffff; }
-
-ul {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
